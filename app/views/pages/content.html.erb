@@ -13,7 +13,8 @@ analytics.page()
 <script>
 analytics.identify('<%= current_user.id %>', {
     email   : '<%= current_user.email %>',
-    createdAt : '<%= current_user.created_at %>'
+    createdAt : '<%= current_user.created_at %>',
+    name: '<%= current_user.name %>'
 }, {
     integrations: {
         Intercom : {
