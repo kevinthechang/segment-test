@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # rails_12factor gem
 gem 'rails_12factor', group: :production
 
+# Segment
+gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
+
 # Intercom
 # gem 'intercom-rails'
 # gem 'intercom', "~> 3.0.3"

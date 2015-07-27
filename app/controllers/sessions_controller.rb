@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
           event: 'Logged In',
           properties: {}
         )
+
     		redirect_to '/content'
   		else
     		redirect_to '/login'

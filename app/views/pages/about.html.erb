@@ -16,5 +16,20 @@ analytics.page()
 <div class="supporting">
 	<h2>Join and share in the experiences</h2>
 	<p>Stories automatically creates a digital journal filled with only your best photos.</p>
-	<%= link_to "Sign Up", '/signup' %>
 </div>
+
+<script>
+analytics.identify('<%= current_user.id %>', {
+    email   : '<%= current_user.email %>',
+    createdAt : '<%= current_user.created_at %>'
+}, {
+    integrations: {
+        Intercom : {
+            user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", "current_user.id") %>'
+        }
+    }
+});
+</script>
+<script>
+analytics.track('Clicked About');
+</script>
