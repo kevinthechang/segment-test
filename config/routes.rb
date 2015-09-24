@@ -57,10 +57,10 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   resource :users
   get 'signup' => 'users#new'
-  get 'thanks' => 'pages#thanks'
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   get 'content' => 'pages#content'
   get 'logout' => 'sessions#destroy'
+  post 'payload' => 'pages#thanks'
 end

@@ -6,7 +6,7 @@ analytics.page()
 }}();
 </script>
 </head>
-
+<body>
 <%# Main section %>
 <div class="main">
 	<h1>About this project</h1>
@@ -30,7 +30,8 @@ analytics.identify('<%= current_user.id %>', {
         }
     }
 });
-</script>
+</script> 
 <script>
 analytics.track('Clicked About');
 </script>
+</body>
