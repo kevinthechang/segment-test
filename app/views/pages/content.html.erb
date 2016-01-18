@@ -17,8 +17,8 @@ analytics.identify('<%= current_user.id %>', {
 }, {
     integrations: {
         Intercom : {
-            // user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", "current_user.id") %>'
-            user_hash: "73af77592372317c0d5b776b9067e14804a6ba161c76f030bfa6293361d73cd0"
+            user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", "current_user.id") %>'
+            // user_hash: "73af77592372317c0d5b776b9067e14804a6ba161c76f030bfa6293361d73cd0"
         }
     }
 });
