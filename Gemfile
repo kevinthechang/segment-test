@@ -31,7 +31,7 @@ gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 
 # Intercom
 # gem 'intercom-rails'
-# gem 'intercom', "~> 3.0.3"
+gem 'intercom', "~> 3.0.3"
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -52,4 +52,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
