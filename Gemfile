@@ -36,6 +36,8 @@ gem 'intercom', "~> 3.0.3"
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# pry
+gem 'pry', '~> 0.10.3'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
