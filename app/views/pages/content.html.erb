@@ -15,9 +15,10 @@ analytics.identify('<%= current_user.id %>', {
     createdAt : '<%= current_user.created_at %>',
     name: '<%= current_user.name %>'
 }, {
-        Intercom : {
-            user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", current_user.id.to_s) %>'
-        }
+  integrations: {Intercom: false}
+        // Intercom : {
+        //     user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", current_user.id.to_s) %>'
+        // }
 
 });
 analytics.group('C-1234',{name: "Test Company"});
