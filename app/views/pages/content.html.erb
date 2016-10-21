@@ -16,7 +16,6 @@ analytics.identify('<%= current_user.id %>', {
     name: '<%= current_user.name %>'
   // });
 }, {
-  integrations: 
         Intercom : {
             user_hash : '<%= OpenSSL::HMAC.hexdigest("sha256", "t3YzBOl51PiKveT13MkyzUPrKoXUsVPlnNQma7WK", current_user.id.to_s) %>'
         }
